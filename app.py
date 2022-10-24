@@ -14,7 +14,7 @@ def student_id():
 
 def covid_statistics_api():
     body = request.json
-    country = body["queryResult"]["parameters"]["country"]
+    country = body["queryResult"]["parameters"]["geo-country"]
 
     api_url = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total"
 
